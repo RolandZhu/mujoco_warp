@@ -11,7 +11,7 @@ authors = [
 ]
 description = "MuJoCo Warp (MJWarp)"
 readme = {file = "README.md", content-type = "text/markdown"}
-license = "Apache-2.0"
+license = { text = "Apache-2.0" }
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -32,20 +32,6 @@ dependencies = [
     "numpy",
     "warp-lang>=1.9.0.dev20250825",
 ]
-
-[[tool.uv.index]]
-name = "nvidia"
-url = "https://pypi.nvidia.com"
-explicit = true
-
-[[tool.uv.index]]
-name = "mujoco"
-url = "https://py.mujoco.org/"
-explicit = true
-
-[tool.uv.sources]
-warp-lang = {index = "nvidia"}
-mujoco = {index = "mujoco"}
 
 [project.optional-dependencies]
 dev = [
